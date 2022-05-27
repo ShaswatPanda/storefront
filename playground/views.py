@@ -9,6 +9,8 @@ from django.http import HttpResponse
 def say_hello(request):
     # Pull data from db and transform
     # return HttpResponse('Hello World!')
+    x = 1
+    y = 2
     return render(request, 
                 'hello.html', 
                 {'name': 'Shaswat',}
