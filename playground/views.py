@@ -9,7 +9,10 @@ from django.http import HttpResponse
 def say_hello(request):
     # Pull data from db and transform
     # return HttpResponse('Hello World!')
-    return render(request, 'hello.html')
+    return render(request, 
+                'hello.html', 
+                {'name': 'Shaswat',}
+                )
 
 def playground_home(request):
     return HttpResponse('Welcome to the playground page!')
