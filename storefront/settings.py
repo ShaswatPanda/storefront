@@ -42,6 +42,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'playground',
     'debug_toolbar',
+    'products',
+    'cart',
+    'orders',
+    'profiles',
+
 ]
 
 MIDDLEWARE = [
@@ -68,7 +73,12 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(BASE_DIR, 'templates'),
                  os.path.join(BASE_DIR, 'storefront/templates'),
-                 os.path.join(BASE_DIR, 'playground/templates')],
+                 os.path.join(BASE_DIR, 'playground/templates'),
+                 os.path.join(BASE_DIR, 'cart/templates'),
+                 os.path.join(BASE_DIR, 'orders/templates'),
+                 os.path.join(BASE_DIR, 'products/templates'),
+                 os.path.join(BASE_DIR, 'profiles/templates'),
+                 ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
